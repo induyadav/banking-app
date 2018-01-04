@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBBDD7161FFE55C200E74C4F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDD7151FFE55C200E74C4F /* Account.swift */; };
+		FBBDD71A1FFE58DA00E74C4F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDD7191FFE58DA00E74C4F /* CreateAccountViewController.swift */; };
+		FBBDD71C1FFE59C300E74C4F /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDD71B1FFE59C300E74C4F /* AccountTableViewController.swift */; };
 		FBD714E41FFE14C4004859ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD714E31FFE14C4004859ED /* AppDelegate.swift */; };
-		FBD714E61FFE14C4004859ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD714E51FFE14C4004859ED /* ViewController.swift */; };
 		FBD714E91FFE14C4004859ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD714E71FFE14C4004859ED /* Main.storyboard */; };
 		FBD714EC1FFE14C4004859ED /* banking_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBD714EA1FFE14C4004859ED /* banking_app.xcdatamodeld */; };
 		FBD714EE1FFE14C4004859ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD714ED1FFE14C4004859ED /* Assets.xcassets */; };
@@ -35,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FBBDD7151FFE55C200E74C4F /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		FBBDD7191FFE58DA00E74C4F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		FBBDD71B1FFE59C300E74C4F /* AccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
 		FBD714E01FFE14C4004859ED /* banking app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "banking app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD714E31FFE14C4004859ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBD714E51FFE14C4004859ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBD714E81FFE14C4004859ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBD714EB1FFE14C4004859ED /* banking_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = banking_app.xcdatamodel; sourceTree = "<group>"; };
 		FBD714ED1FFE14C4004859ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +92,14 @@
 			path = "supporting files";
 			sourceTree = "<group>";
 		};
+		FBBDD71D1FFE5B8300E74C4F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FBBDD7151FFE55C200E74C4F /* Account.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		FBD714D71FFE14C4004859ED = {
 			isa = PBXGroup;
 			children = (
@@ -112,8 +124,10 @@
 		FBD714E21FFE14C4004859ED /* banking app */ = {
 			isa = PBXGroup;
 			children = (
-				FBD714E51FFE14C4004859ED /* ViewController.swift */,
 				FBD714E71FFE14C4004859ED /* Main.storyboard */,
+				FBBDD7191FFE58DA00E74C4F /* CreateAccountViewController.swift */,
+				FBBDD71B1FFE59C300E74C4F /* AccountTableViewController.swift */,
+				FBBDD71D1FFE5B8300E74C4F /* model */,
 			);
 			path = "banking app";
 			sourceTree = "<group>";
@@ -270,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD714E61FFE14C4004859ED /* ViewController.swift in Sources */,
+				FBBDD71A1FFE58DA00E74C4F /* CreateAccountViewController.swift in Sources */,
+				FBBDD7161FFE55C200E74C4F /* Account.swift in Sources */,
+				FBBDD71C1FFE59C300E74C4F /* AccountTableViewController.swift in Sources */,
 				FBD714EC1FFE14C4004859ED /* banking_app.xcdatamodeld in Sources */,
 				FBD714E41FFE14C4004859ED /* AppDelegate.swift in Sources */,
 			);
@@ -441,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDMH53532J;
 				INFOPLIST_FILE = "$(SRCROOT)/supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "banking.banking-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,6 +473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDMH53532J;
 				INFOPLIST_FILE = "$(SRCROOT)/supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "banking.banking-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
