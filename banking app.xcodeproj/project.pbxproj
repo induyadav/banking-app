@@ -76,10 +76,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FBBDD7141FFE4EEA00E74C4F /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				FBD714E31FFE14C4004859ED /* AppDelegate.swift */,
+				FBD714ED1FFE14C4004859ED /* Assets.xcassets */,
+				FBD714EF1FFE14C4004859ED /* LaunchScreen.storyboard */,
+				FBD714F21FFE14C4004859ED /* Info.plist */,
+				FBD714EA1FFE14C4004859ED /* banking_app.xcdatamodeld */,
+			);
+			path = "supporting files";
+			sourceTree = "<group>";
+		};
 		FBD714D71FFE14C4004859ED = {
 			isa = PBXGroup;
 			children = (
 				FBD714E21FFE14C4004859ED /* banking app */,
+				FBBDD7141FFE4EEA00E74C4F /* supporting files */,
 				FBD714FA1FFE14C4004859ED /* banking appTests */,
 				FBD715051FFE14C4004859ED /* banking appUITests */,
 				FBD714E11FFE14C4004859ED /* Products */,
@@ -99,13 +112,8 @@
 		FBD714E21FFE14C4004859ED /* banking app */ = {
 			isa = PBXGroup;
 			children = (
-				FBD714E31FFE14C4004859ED /* AppDelegate.swift */,
 				FBD714E51FFE14C4004859ED /* ViewController.swift */,
 				FBD714E71FFE14C4004859ED /* Main.storyboard */,
-				FBD714ED1FFE14C4004859ED /* Assets.xcassets */,
-				FBD714EF1FFE14C4004859ED /* LaunchScreen.storyboard */,
-				FBD714F21FFE14C4004859ED /* Info.plist */,
-				FBD714EA1FFE14C4004859ED /* banking_app.xcdatamodeld */,
 			);
 			path = "banking app";
 			sourceTree = "<group>";
@@ -432,7 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDMH53532J;
-				INFOPLIST_FILE = "banking app/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "banking.banking-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,7 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDMH53532J;
-				INFOPLIST_FILE = "banking app/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "banking.banking-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
