@@ -10,6 +10,7 @@
 		FBBDD7161FFE55C200E74C4F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDD7151FFE55C200E74C4F /* Account.swift */; };
 		FBBDD71A1FFE58DA00E74C4F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDD7191FFE58DA00E74C4F /* CreateAccountViewController.swift */; };
 		FBBDD71C1FFE59C300E74C4F /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDD71B1FFE59C300E74C4F /* AccountTableViewController.swift */; };
+		FBBDD71F1FFE846800E74C4F /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDD71E1FFE846800E74C4F /* AccountTableViewCell.swift */; };
 		FBD714E41FFE14C4004859ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD714E31FFE14C4004859ED /* AppDelegate.swift */; };
 		FBD714E91FFE14C4004859ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD714E71FFE14C4004859ED /* Main.storyboard */; };
 		FBD714EC1FFE14C4004859ED /* banking_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBD714EA1FFE14C4004859ED /* banking_app.xcdatamodeld */; };
@@ -40,6 +41,7 @@
 		FBBDD7151FFE55C200E74C4F /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		FBBDD7191FFE58DA00E74C4F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		FBBDD71B1FFE59C300E74C4F /* AccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
+		FBBDD71E1FFE846800E74C4F /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		FBD714E01FFE14C4004859ED /* banking app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "banking app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD714E31FFE14C4004859ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD714E81FFE14C4004859ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				FBD714E71FFE14C4004859ED /* Main.storyboard */,
 				FBBDD7191FFE58DA00E74C4F /* CreateAccountViewController.swift */,
 				FBBDD71B1FFE59C300E74C4F /* AccountTableViewController.swift */,
+				FBBDD71E1FFE846800E74C4F /* AccountTableViewCell.swift */,
 				FBBDD71D1FFE5B8300E74C4F /* model */,
 			);
 			path = "banking app";
@@ -287,6 +290,7 @@
 				FBBDD71A1FFE58DA00E74C4F /* CreateAccountViewController.swift in Sources */,
 				FBBDD7161FFE55C200E74C4F /* Account.swift in Sources */,
 				FBBDD71C1FFE59C300E74C4F /* AccountTableViewController.swift in Sources */,
+				FBBDD71F1FFE846800E74C4F /* AccountTableViewCell.swift in Sources */,
 				FBD714EC1FFE14C4004859ED /* banking_app.xcdatamodeld in Sources */,
 				FBD714E41FFE14C4004859ED /* AppDelegate.swift in Sources */,
 			);
