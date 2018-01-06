@@ -10,6 +10,7 @@ import UIKit
 
 class CreateAccountViewController: UIViewController {
 
+    var accounts : [Account] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +32,7 @@ class CreateAccountViewController: UIViewController {
         {
             return
         }
-        var account = Account(Name: getName.text!, AccountNumber: getAccountNumber.text!, BankName: getBankName.text!)
+        accounts = [Account(Name: getName.text!, AccountNumber: getAccountNumber.text!, BankName: getBankName.text!)]
     }
 
 

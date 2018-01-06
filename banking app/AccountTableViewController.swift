@@ -11,7 +11,7 @@ import UIKit
 class AccountTableViewController: UITableViewController{
    
     // OBJECT OF STRUCT Account
-    var accounts : [Account] = []
+    var accounts = [Account]()
     // Default position of index
     var myIndex = 0
     
@@ -51,9 +51,18 @@ class AccountTableViewController: UITableViewController{
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell", for: indexPath)as! AccountTableViewCell
         let index = indexPath.row
         let account = accounts[index]
-        cell.
+        if let textCell = cell as AccountTableViewCell!
+        {   let account = accounts[indexPath.row]
         
+            textCell.setName.text = account.Name
+            textCell.setBankName.text = account.BankName
+            textCell.setAccountNumber.text = account.AccountNumber
+/////////////textCell.setAccountBalance = Account.AccountBalance!///////////////////////
+            }
+        return cell
     }
+    
+    
     // buttons for cancel and save in ["create-tableviewcontroller"]
     @IBAction func cancelAccountCreation(_ segue: UIStoryboardSegue) {}
     @IBAction func saveAccount(_ segue: UIStoryboardSegue) {}

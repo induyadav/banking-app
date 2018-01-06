@@ -10,9 +10,9 @@ import Foundation
 //account model
 struct Account
 {
-    var Name : String
-    var AccountNumber : String
-    var BankName : String
+    var Name : String = ""
+    var AccountNumber : String = ""
+    var BankName : String = ""
 }
 
 

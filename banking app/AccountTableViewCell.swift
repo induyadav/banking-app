@@ -9,8 +9,6 @@
 import UIKit
 
 class AccountTableViewCell: UITableViewCell{
-  
-     var accounts : [Account] = []
     
     
 
