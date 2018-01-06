@@ -48,7 +48,7 @@ class AccountTableViewController: UITableViewController{
     
     //function for [table- datasource]
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell", for: IndexPath)as! AccountTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell", for: indexPath)as! AccountTableViewCell
         let index = indexPath.row
         let account = accounts[index]
         cell.
