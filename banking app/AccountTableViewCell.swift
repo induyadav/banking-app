@@ -10,6 +10,7 @@ import UIKit
 
 class AccountTableViewCell: UITableViewCell{
   
+     var accounts : [Account] = []
     
     
 
@@ -29,7 +30,7 @@ class AccountTableViewCell: UITableViewCell{
     @IBOutlet weak var setBankName: UILabel!
     @IBOutlet weak var setName: UILabel!
     
-    setAccountBalance.text = Account.name
+    
     
     
 }

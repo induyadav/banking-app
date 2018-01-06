@@ -9,31 +9,34 @@
 import UIKit
 
 class AccountTableViewController: UITableViewController,UITableViewDataSource{
-    
+   
+    // OBJECT OF STRUCT Account
     var accounts : [Account] = []
+    // Default position of index
     var myIndex = 0
-    override func viewDidLoad() {
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+      
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func didReceiveMemoryWarning()
+    {
+       
+        
     }
 
-    // MARK: - Table view data source
+    
 
   
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
         performSegue(withIdentifier: "segue", sender: self)
     }
+   
+    //fuctions for [table view controller]
     override func numberOfSections(in tableView: UITableView) -> Int {
      return 1
     }
@@ -43,6 +46,7 @@ class AccountTableViewController: UITableViewController,UITableViewDataSource{
     }
   
     
+    //function for [table- datasource]
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell", for: IndexPath)as! AccountTableViewCell
         let index = indexPath.row
@@ -50,7 +54,7 @@ class AccountTableViewController: UITableViewController,UITableViewDataSource{
         cell.
         
     }
-    
+    // buttons for cancel and save in ["create-tableviewcontroller"]
     @IBAction func cancelAccountCreation(_ segue: UIStoryboardSegue) {}
     @IBAction func saveAccount(_ segue: UIStoryboardSegue) {}
   

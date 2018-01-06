@@ -17,18 +17,23 @@ class CreateAccountViewController: UIViewController {
     }
 
   
-    
+    //buttons for the view : NAME, BANKNAME, ACCOUNT NUMBER.
     @IBOutlet weak var getName: UITextField!
     
     @IBOutlet weak var getBankName: UITextField!
     
     @IBOutlet weak var getAccountNumber: UITextField!
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "SaveAccountSegue" else {
+    // IF PRESSED SAVE BUTTON IT SHOULD SEND DETAILS TO THE MODEL.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        guard segue.identifier == "SaveAccountSegue" else
+        {
             return
         }
         var account = Account(Name: getName.text!, AccountNumber: getAccountNumber.text!, BankName: getBankName.text!)
-    
-}
+    }
+
+
+
 }
