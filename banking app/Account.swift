@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//account model
 struct Account
 {
     var Name : String

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AccountTableViewController: UITableViewController,UITableViewDataSource{
+class AccountTableViewController: UITableViewController{
    
     // OBJECT OF STRUCT Account
     var accounts : [Account] = []
