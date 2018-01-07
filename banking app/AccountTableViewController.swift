@@ -11,27 +11,18 @@ import UIKit
 class AccountTableViewController: UITableViewController{
    
     // OBJECT OF STRUCT Account
-    var accounts = [Account]()
+   var accounts = [Account]()
     // Default position of index
     var myIndex = 0
-    
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
 
-      
-    }
+    override func viewDidLoad()
+    {super.viewDidLoad()}
 
     override func didReceiveMemoryWarning()
+    {}
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-       
-        
-    }
-
-    
-
-  
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
         performSegue(withIdentifier: "segue", sender: self)
     }
@@ -50,21 +41,31 @@ class AccountTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell", for: indexPath)as! AccountTableViewCell
         let index = indexPath.row
-        let account = accounts[index]
-        if let textCell = cell as AccountTableViewCell!
-        {   let account = accounts[indexPath.row]
-        
+       var account = accounts[index]
+        if let textCell = cell as AccountTableViewCell!{
+           
+            do {  let account = self.accounts[indexPath.row]
+
             textCell.setName.text = account.Name
             textCell.setBankName.text = account.BankName
             textCell.setAccountNumber.text = account.AccountNumber
-/////////////textCell.setAccountBalance = Account.AccountBalance!///////////////////////
+///////////textCell.setAccountBalance = Account.AccountBalance!///////////////////////
             }
+            print("cell from AccountTableViewVontroller \(cell)")
         return cell
-    }
+            
+        }}
     
     
     // buttons for cancel and save in ["create-tableviewcontroller"]
-    @IBAction func cancelAccountCreation(_ segue: UIStoryboardSegue) {}
-    @IBAction func saveAccount(_ segue: UIStoryboardSegue) {}
+        @IBAction func cancelAccountCreation(_ segue: UIStoryboardSegue) {
+            print("cancel")
+    }
+        @IBAction func saveAccount(_ segue: UIStoryboardSegue) {
+            print("save acc called")
+    }
   
+    override func viewDidAppear(_ animated: Bool) {
+        print("account from AccountTableViewVontroller \(accounts)")
+    }
 }

@@ -30,9 +30,22 @@ class CreateAccountViewController: UIViewController {
     {
         guard segue.identifier == "SaveAccountSegue" else
         {
+            print("gaurd stopped in CreateAccountViewController")
             return
         }
-        accounts = [Account(Name: getName.text!, AccountNumber: getAccountNumber.text!, BankName: getBankName.text!)]
+         let account = Account(a: getName.text!, b: getAccountNumber.text!, c: getBankName.text!)
+         accounts.append(account)
+       
+        accounts.forEach
+            {
+                acc in print("in foreach \(acc)")
+            }
+        
+        for x in accounts{
+          print(x)
+        }
+         
+        
     }
 
 
